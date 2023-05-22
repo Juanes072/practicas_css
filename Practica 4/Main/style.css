@@ -1,0 +1,25 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f7e1eb;
+}
+.contenedor{
+    height:390px;
+    width: 520px;
+    display:flex;
+    background-color: #ffffff;
+    margin-top:120px;
+    border-radius: 10px;
+}
+img{
+    height: 390px;
+    border-radius: 10px 0 0 10px;
+}
+.descripcion{
+    margin-left: 25px;
+}
+.descripcion-producto{
+    margin-top: 30px;
+}
