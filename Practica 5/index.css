@@ -1,0 +1,132 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #9395a4;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-color: #dee8fe;
+}
+.container{
+    height: 700px;
+    width: 450px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 16px #d6d1fe;
+}
+.principalImg{
+    border-radius: 18px 18px 0 0;
+    margin-bottom: 16px;
+}
+h1,b{
+    color: #1e2e50;
+}
+h1{
+    font-size: 24px;
+}
+.description{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descriptionText{
+    margin-top: 0;
+    width: 300px;
+}
+p{
+    font-size: 16px;
+}
+.descriptionPlan{
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fe;
+    height: 100px;
+    width: 350px;
+    border-radius: 10px;
+}
+#descriptionPlanTime{
+    width: 100px;
+    margin-right: 80px;
+}
+#descriptionPlanChange,b{
+    font-weight: bold;
+}
+#descriptionPlanChange{
+    color:#382be0;
+}
+.descriptionPlan img{
+    margin: 0 20px;
+}
+#descriptionPay{
+    color:#ffffff;
+    background-color: #382be0;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 32px;
+    box-shadow: 0px 25px 15px #ebe9ff;
+}
+#descriptionCancel{
+    font-weight: bold;
+    margin-top: 30px;
+}
+#descriptionPlanChange:hover{
+    text-decoration: none;
+    color:#766cf1;
+    cursor: pointer;
+}
+#descriptionPay:hover{
+    background-color: #766cf1;
+    cursor: pointer;
+}
+#descriptionCancel:hover{
+    cursor: pointer;
+    color:#1e2e50;
+    font-weight: bold;
+}
+@media (max-width: 475px) {
+    main{
+        background-size: 100% 35%;
+    }
+    .container{
+        width: 350px;
+        height: 570px;
+    }
+    h1{
+        margin: 0 0 10px 0;
+        font-size: 24px;
+    }
+    .principalImg{
+        width: 350px;
+    }
+    .descriptionText{
+        width: 270px;
+    }
+    .descriptionPlan{
+        width: 280px;
+    }
+    #descriptionPlanTime{
+        margin-right: 40px;
+    }
+    .descriptionPlan img{
+        margin: 0 10px;
+    }
+    #descriptionPay{
+        width: 280px;
+        margin-bottom: 0;
+    }
+}
