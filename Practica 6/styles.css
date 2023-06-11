@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /*font-family: 'Lexend Deca', sans-serif; 400
+    font-family: 'Big Shoulders Display', cursive; 700*/
+}
+body{
+    background-color: #f3f2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width:930px;
+    min-width: 330px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+section{
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+div{
+    width: 68%;
+    height: 80%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h2{
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-size: 34px;
+    margin-top:20px;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 20px 0 55%
+}
+a{
+    border:solid 3px #fff;
+    border-radius: 25px;
+    background-color: #fff;
+    color: hsla(0, 0%, 0%, 0.75);
+    text-decoration: none;
+    padding: 13px 34px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+#sedans a{
+    color: hsl(31, 77%, 52%);
+}
+#suvs a{
+    color: hsl(184, 100%, 22%);
+}
+#luxury a{
+    color: hsl(179, 100%, 13%);
+}
+#sedans{
+    border-radius: 18px 0 0 18px;
+    background-color: hsl(31, 77%, 52%);
+}
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 18px 18px 0;
+}
+#sedans a:hover{
+    background-color: hsl(31, 77%, 52%);
+    color:#fff;
+}
+#suvs a:hover{
+    background-color: hsl(184, 100%, 22%);
+    color:#fff;
+}
+#luxury a:hover{
+    background-color: hsl(179, 100%, 13%);
+    color:#fff;
+}
+.column.activo{
+    width: 60%;
+}
+@media (max-width: 375px){
+    body{
+        align-items: normal;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1335px;
+    }
+    section{
+        height:445px
+    }
+    #sedans{
+        border-radius: 18px 18px 0 0;
+    }
+    #luxury{
+        border-radius: 0 0 18px 18px;
+    }
+    p{
+        margin-bottom: 60px;
+    }
+}
