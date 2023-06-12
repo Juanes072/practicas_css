@@ -112,4 +112,7 @@ a{
     p{
         margin-bottom: 60px;
     }
+    .column.activo{
+        width: 310px;
+    }
 }
