@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#121417;
+}
+section{
+    width: 410px;
+    height: 415px;
+    background: radial-gradient(circle at 50% -40%, #232833 , #161e29, #161e29);
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+}
+div{
+    margin-left: 35px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+img{
+    background-color: #272f39;
+    padding: 15px;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-bottom: 28px;
+}
+h3{
+    color:#fff;
+    font-weight: 700;
+}
+p{
+    color: #7c8798;
+    margin-top: 20px;
+    line-height: 26px;
+    width: 370px;
+}
+ul{
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+li{
+    list-style: none;
+    background-color: #272f39;
+    padding: 14px 20px;
+    border-radius: 100%;
+    color: #7c8798;
+    cursor: pointer;
+}
+button{
+    width:340px;
+    height: 45px;
+    border: none;
+    background-color: #fb7413;
+    border-radius: 28px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2.3px;
+    cursor: pointer;
+}
+li:hover{
+    color:#fff;
+    background-color: #fb7413;
+}
+button:hover{
+    color:#fb7413;
+    background-color: #fff;
+}
+.puntos.activo{
+    background-color: #7c8798;
+    color:#fff;
+}
+.puntos.activo:hover{
+    color:#fff;
+    background-color: #7c8798;
+    cursor: default;
+}
+.segundo{
+    position: absolute;
+    z-index: 0;
+}
+.gracias{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    width: 410px;
+    height: 415px;
+}
+.gracias img{
+    border-radius: 0;
+    background-color: inherit;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+#selectd{
+    background-color: #232833;
+    width: 180px;
+    padding-top: 4px;
+    color:#fb7413;
+    border-radius: 25px;
+    margin-bottom: 35px;
+}
+h2{
+    color:#fff;
+}
+#graciasParrafo{
+    width: 338px;
+    margin-top: 15px;
+}
+@media (max-width:450px) {
+    section,.gracias{
+        width: 330px;
+        height: 360px;
+    }
+    div{
+        margin-left: 15px;
+    }
+    img{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    p{
+        width: 301px;
+        margin-top: 12px;
+        line-height: 20px;
+    }
+    ul{
+        width: 301px;
+        margin: 25px 0;
+    }
+    button{
+        width: 301px;
+    }
+    .gracias img{
+        margin-top: 30px;
+    }
+    #graciasParrafo{
+        width: 289px;
+    }
+    #selectd{
+        margin-bottom: 28px;
+    }
+}
