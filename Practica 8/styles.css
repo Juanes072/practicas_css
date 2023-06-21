@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#6565e7,#af67e9);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 920px;
+    height:510px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 50%;
+    height: 100%;
+}
+p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.imagenes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#tres{
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    height:945px;
+    width: 966px;
+    position: absolute;
+    z-index: 0;
+    float: right;
+    margin-right: 70px;
+    margin-bottom: 160px;
+}
+#dos{
+    background-image: url("./images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    height:  359px;
+    width: 472px;
+    position: absolute;
+    z-index: 1;
+    float: right;
+    margin-right: 70px;
+}
+.uno{
+    background-image: url("./images/illustration-box-desktop.svg");
+    height: 184px;
+    width:191px;
+    position: fixed;
+    z-index: 2;
+    transition: margin-right 1.5s;
+    margin-right: 362px;
+    margin-top: 95px;
+}
+section .texto{
+    padding: 0 80px 0 40px;
+    color: #787887;
+}
+section h1{
+    margin: 60px 0 40px;
+    color: black;
+    font-size: 28px;
+}
+h5{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textoContenedor{
+    border-bottom: solid 1px #e7e7e9;
+    margin-bottom: 8px;
+    height:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textoContenedor p{
+    display: none;
+}
+.textoContenedor.Activo{
+    height: 80px;
+}
+.textoContenedor.Activo h5{
+    margin-bottom: 15px;
+    margin-top: -10px;
+    color: black
+}
+.textoContenedor.Activo p{
+    display: block;
+}
+.textoContenedor.Activo #icon{
+    transform: rotate(180deg);
+}
+.textoContenedor:hover{
+    color: #f47c57;
+    cursor: pointer;
+}
+.uno.activo{
+    transition: margin-right 1.5s;
+    margin-right: 390px;
+}
+@media (max-width: 1050px){
+    main{
+        width: 330px;
+        height:535px;
+        flex-direction: column;
+        margin: 100px 0 0px;
+        justify-content: normal;
+    }
+    section{
+        width: 100%;
+        height: auto;
+    }
+    .imagenes{
+        height: 90px;
+        justify-content: center;
+    }
+    #tres{
+        background-image: url("./images/bg-pattern-mobile.svg");
+        position: fixed;
+        height: 105px;
+        width: 240px;
+        margin: 20px 0 0;
+    }
+    #dos{
+        background-image: url("./images/illustration-woman-online-mobile.svg");
+        height: 185px;
+        width: 240px;
+        margin: -120px 0 0;
+        position: fixed;
+    }
+    .uno{
+        display: none;
+    }
+    section h1{
+        font-size: 28px;
+        margin-top: 45px;
+        margin-bottom: 5px ;
+        text-align: center;
+    }
+    section .texto{
+        padding: 0 35px;
+    }
+    section h5{
+        font-size: 13px;
+    }
+}   
