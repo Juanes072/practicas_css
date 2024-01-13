@@ -1,0 +1,171 @@
+*{
+    padding:0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: #ecf2f8;
+}
+main{
+    height: 285px;
+    width: 730px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.imagen,.producto{
+    width: 285px;
+    height: 285px;
+    border-radius: 10px 0 0 10px;
+}
+.descripcion{
+    margin: 0 35px;
+}
+.perfil{
+    width: 40px;
+    height: 40px;
+}
+h1{
+    margin-top: 35px;
+    color: #48556a;
+    font-size: 20px;
+}
+p{
+    margin-top: 15px;
+    font-size: 13px;
+    color: #6d7f97;
+
+}
+.cuenta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.cuenta .perfil{
+    border-radius: 100%;
+}
+.cuenta p{
+    margin-left: -160px;
+    margin-top: 0;
+    color: #48556a;
+    font-weight: 700;
+}
+.cuenta span{
+    color: #6d7f97;
+    font-weight: 500;
+}
+.cuenta div{
+    background-color: #ecf2f8;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuenta div:hover{
+    cursor:pointer;
+    background-color: #48556a;
+}
+.redes.activo{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #48556a;
+    width: 250px;
+    height: 55px;
+    position: fixed;
+    margin: -38px 0 0px 225px;
+    border-radius: 10px;
+}
+.caja{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #48556a;
+    transform: rotate(45deg);
+    margin: 46px 0 0px 16px;
+}
+.redes p{
+    margin:0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #9eafc2;
+}
+.redes{
+    display:none;
+}
+@media (max-width:750px){
+    .contenedor{
+        width: 330px;
+        height: 515px;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .imagen,.imagen .producto{
+        width: 330px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+    .descripcion{
+        margin: 0 36px;
+    }
+    .descripcion h1{
+        font-size: 16px;
+        margin-top: 37px;
+        
+    }
+    .descripcion p{
+        margin-top: 18px;
+    }
+    .cuenta{
+        margin-top: 40px;
+    }
+    .cuenta p{
+        margin-left: -45px;
+        margin-top:0;
+    }
+    .redes.activo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        background-color: #48556a;
+        width: 330px;
+        height: 30px;
+        margin: 18px 0px 0 -36px;
+        padding: 28px 0;
+        border-radius: 0 0 10px 10px;
+    }
+    .caja{
+        display: none;
+    }
+    .redes p{
+        margin: 0;
+    }
+    .redes #contenedorIcono{
+        background-color:#6d7f97;
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 27px 0 35px;
+    }
+}
